@@ -24,6 +24,6 @@
         </property>
         <property>
              <name>fs.defaultFS</name>
-             <value>hdfs://192.168.0.144:9000</value>
+             <value>hdfs://192.168.0.144:9000</value><!-- 配置IP地址，hadoop启动配置文件也要配置，这样就能远程调用了. -->
         </property>
 </configuration>

@@ -103,8 +103,8 @@ public class HDFSTest {
 		String fileWrite = "hdfs://192.168.0.144:9000/user/hadoop/hm.txt";
 
 		// 1. 写操作
-		 String words = "This words is to write into file!\n";
-		 WriteToHDFS(fileWrite, words);
+//		 String words = "This words is to write into file!\n";
+//		 WriteToHDFS(fileWrite, words);
 
 		// 2. 读操作
 		ReadFromHDFS(fileWrite);
