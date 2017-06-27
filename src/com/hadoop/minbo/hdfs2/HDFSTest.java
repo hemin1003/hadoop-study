@@ -23,7 +23,7 @@ public class HDFSTest {
 		FSDataOutputStream out = fs.create(path); // 创建文件
 
 		// 两个方法都用于文件写入，好像一般多使用后者
-		out.writeBytes(words);
+//		out.writeBytes(words);
 		out.write(words.getBytes("UTF-8"));
 
 		out.close();
@@ -41,7 +41,7 @@ public class HDFSTest {
 		Path path = new Path(file);
 		FSDataInputStream in = fs.open(path);
 
-		 IOUtils.copyBytes(in, System.out, 4096, true);
+		 IOUtils.copyBytes(in, System.out, 4096, false);
 		 
 		// 使用FSDataInoutStream的read方法会将文件内容读取到字节流中并返回
 //		FileStatus stat = fs.getFileStatus(path); // create the buffer byte[]
@@ -103,14 +103,14 @@ public class HDFSTest {
 		String fileWrite = "hdfs://192.168.0.144:9000/user/hadoop/hm.txt";
 
 		// 1. 写操作
-//		 String words = "This words is to write into file!\n";
-//		 WriteToHDFS(fileWrite, words);
+		 String words = "This words is to write into file!\n";
+		 WriteToHDFS(fileWrite, words);
 
 		// 2. 读操作
 		ReadFromHDFS(fileWrite);
 
 		// //3. 删除操作
-		// DeleteHDFSFile(fileWrite);
+		 DeleteHDFSFile(fileWrite);
 
 		// 本地上传文件到HDFS
 		// String LocalFile = "file:///home//hadoop//hm.txt";
