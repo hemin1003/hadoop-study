@@ -9,6 +9,8 @@ import org.apache.hadoop.fs.Path;
 
 public class ReadFile {
 	public static void main(String[] args) throws IOException {
+		System.setProperty("hadoop.home.dir", "F:\\hadoop\\hadoop-2.7.3");
+		
 		Configuration conf = new Configuration();
 		FileSystem fs = FileSystem.get(conf);
 		Path path = new Path("/user/hadoop/hm.txt");

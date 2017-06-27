@@ -6,6 +6,9 @@ import java.net.URISyntaxException;
 public class Test {
 
 	public static void main(String[] args) throws IOException, URISyntaxException {
+		
+		System.setProperty("hadoop.home.dir", "F:\\hadoop\\hadoop-2.7.3");
+		
 		// 显示目录下所有文件
 		// HdfsUtils.ListDirAll("hdfs://192.168.0.144:9000/user/hadoop");
 		// HdfsUtils.ListDirAll2("hdfs://192.168.0.144:9000/user/hadoop");
