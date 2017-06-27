@@ -13,9 +13,6 @@ import org.apache.hadoop.util.GenericOptionsParser;
 
 import java.io.IOException;
 
-/**
- * 参考文章：http://blog.csdn.net/kongxx/article/details/42339581
- */
 public class EventCount {
 
 	public static class MyMapper extends Mapper<Object, Text, Text, IntWritable> {
