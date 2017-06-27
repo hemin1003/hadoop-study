@@ -22,7 +22,7 @@ public class ReadFile {
 			System.out.println(buffer.toString());
 			String s = new String(buffer);
 			System.out.println(s.toString());
-			System.out.println("done");
 		}
+		System.out.println("done");
 	}
 }
