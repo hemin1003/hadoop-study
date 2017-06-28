@@ -39,8 +39,8 @@ public class WordCount {
 
 	public static void main(String[] args) throws Exception {
 		// Window下运行设置
-//		System.setProperty("hadoop.home.dir", "F:\\hadoop\\hadoop-2.7.3");	//设置hadoop安装路径
-//		System.setProperty("HADOOP_USER_NAME", "hadoop");	//用户名
+		System.setProperty("hadoop.home.dir", "F:\\hadoop\\hadoop-2.7.3");	//设置hadoop安装路径
+		System.setProperty("HADOOP_USER_NAME", "hadoop");	//用户名
 		
 		Configuration conf = new Configuration();
 		//新建一个job
