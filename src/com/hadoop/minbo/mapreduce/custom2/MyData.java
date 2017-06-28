@@ -8,7 +8,6 @@ import org.apache.hadoop.io.Writable;
 
 /**
  * 自定义数据类型需要在hadoop中传输需要实现Writable接口
- * 
  * @author MINBO
  */
 public class MyData implements Writable {
